@@ -45,5 +45,5 @@ install(TARGETS ${PROJECT_NAME}
     LIBRARY DESTINATION lib
 )
 
-install(FILES GLOOX_HEADERS DESTINATION include/gloox)
+install(FILES ${GLOOX_HEADERS} DESTINATION include/gloox)
 install(EXPORT ${PROJECT_NAME}-config DESTINATION cmake)
