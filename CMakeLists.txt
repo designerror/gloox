@@ -25,6 +25,7 @@ set(${PROJECT_NAME}_VERSION_STRING "v${${PROJECT_NAME}_VERSION}")
 hunter_add_package(OpenSSL)
 find_package(OpenSSL REQUIRED)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
 file(GLOB GLOOX_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
